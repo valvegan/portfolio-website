@@ -28,7 +28,6 @@ body {
 }
 .navigation-list {
   text-transform: uppercase;
-  color: var(--secondary-text-color);
 }
 .profile__info h1 {
   font-family: var(--intro-font);
