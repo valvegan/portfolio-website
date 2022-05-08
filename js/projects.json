@@ -1,0 +1,40 @@
+[
+  {
+    "Title": "The Events_App",
+    "Description": "The Events App is a serverless PWA (progressive web application), developed via TDD (unit, integration, user acceptance, and end-to-end testing) and BDD (Gherkin syntax and features) techniques. Users can access the application with their Google account, then they can browse through a set of fake events fetched from a Google Calendar using the respective Google API. Users can also view data charts about the events available! Pop-up messages appear when a user incurs in a warning, or an error.",
+    "Description_2": "Over the course of my project not only have I worked quite heavily on testing processes, I've also learned about serverless functions and the different cloud services, oAuth and Google verification process, and continuous delivery/continuous integration development processes.",
+    "Serverless Cloud Provider": "AWS Lambda",
+    "Libraries": ["Recharts", "React.js", "Axios"],
+    "Test Runners": ["Jest", "Cucumber", "Puppeteer"]
+  },
+  {
+    "Title": "MyFlix Client",
+    "Description": "The front end application stemming from its respective server-side code (REST API and database). MyFlix Client is an SPA (single page application) built following the MVC pattern (and Flux with Redux), where users can register/login, update their details, de-register, view and filter through a detailed collection of movies (fetched from the API), and add and remove movies to their list of favorites.",
+    "Libraries": ["React", "Axios", "Redux", "Sass"],
+    "Frameworks": ["React Bootstrap"],
+    "Architecture": ["MVC", "Flux Redux"]
+  },
+  {
+    "Title": "MyFlix API ",
+    "Description": "The server side backbone of MyFlix Client. The dabase stores data about a small collection of movies, and the API (myFlix, created following the REST pattern) interacts with it by performing CRUD operations (Create, Read, Update and Delete). Requests are sent via endpoints and/or a request body in JSON format (for registering and updating new users), and tested through Postman. Authentication, authorization, and data validation logic are implemented, and the API meets data security regulations.",
+    "Environment": "Node.js",
+    "Database": "MongoDB",
+    "Libraries": ["Axios"],
+    "Technologies": [
+      "Postman(testing)",
+      "Heroku (deployment)",
+      "Mongoose (object modelling/schema tool)",
+      "PostgreSQL (relational database, for the learning process)",
+      "MongoDB Atlas (cloud storage for the database)"
+    ],
+    "Frameworks": ["Express"],
+    "Node.js Middlewares": ["body-parser", "morgan", "CORS", "Passport"]
+  },
+  {
+    "Title": "Simple-js-app",
+    "Description": "A small application that fetches information from the public Pokemon API and displays a list of pokemons. Users can view more information about each Pokemon (via window pop-up upon click on any pokemon name) and filter/search through the listed Pokemons.",
+    "Technologies": ["HTML", "CSS", "JavaScript"],
+    "Libraries": ["jQuery"],
+    "Frameworks": ["Bootstrap"]
+  }
+]
