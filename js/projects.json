@@ -4,15 +4,20 @@
     "Description": "The Events App is a serverless PWA (progressive web application), developed via TDD (unit, integration, user acceptance, and end-to-end testing) and BDD (Gherkin syntax and features) techniques. Users can access the application with their Google account, then they can browse through a set of fake events fetched from a Google Calendar using the respective Google API. Users can also view data charts about the events available! Pop-up messages appear when a user incurs in a warning, or an error.",
     "Description_2": "Over the course of my project not only have I worked quite heavily on testing processes, I've also learned about serverless functions and the different cloud services, oAuth and Google verification process, and continuous delivery/continuous integration development processes.",
     "Serverless Cloud Provider": "AWS Lambda",
-    "Libraries": ["Recharts", "React.js", "Axios"],
-    "Test Runners": ["Jest", "Cucumber", "Puppeteer"]
+    "Libraries": [{"Name": "Recharts"}, {"Name":"React.js",
+        "img": "https://raw.githubusercontent.com/valvegan/portfolio-website/main/img/svg_icons/react.svg"}, {"Name":"Axios"}],
+    "Test Runners": ["Jest", "Cucumber", "Puppeteer"],
+    "Github Repo": "https://github.com/valvegan/events_app",
+    "Live Site": "https://valvegan.github.io/events_app/"
   },
   {
     "Title": "MyFlix Client",
     "Description": "The front end application stemming from its respective server-side code (REST API and database). MyFlix Client is an SPA (single page application) built following the MVC pattern (and Flux with Redux), where users can register/login, update their details, de-register, view and filter through a detailed collection of movies (fetched from the API), and add and remove movies to their list of favorites.",
     "Libraries": ["React", "Axios", "Redux", "Sass"],
     "Frameworks": ["React Bootstrap"],
-    "Architecture": ["MVC", "Flux Redux"]
+    "Architecture": ["MVC", "Flux Redux"],
+    "Github Repo": "https://github.com/valvegan/simple-js-app",
+    "Live Site": "https://valvegan.github.io/simple-js-app/"
   },
   {
     "Title": "MyFlix API ",
@@ -28,13 +33,17 @@
       "MongoDB Atlas (cloud storage for the database)"
     ],
     "Frameworks": ["Express"],
-    "Node.js Middlewares": ["body-parser", "morgan", "CORS", "Passport"]
+    "Node.js Middlewares": ["body-parser", "morgan", "CORS", "Passport"],
+    "Github Repo": "https://github.com/valvegan/simple-js-app",
+    "Live Site": "https://valvegan.github.io/simple-js-app/"
   },
   {
     "Title": "Simple-js-app",
     "Description": "A small application that fetches information from the public Pokemon API and displays a list of pokemons. Users can view more information about each Pokemon (via window pop-up upon click on any pokemon name) and filter/search through the listed Pokemons.",
     "Technologies": ["HTML", "CSS", "JavaScript"],
     "Libraries": ["jQuery"],
-    "Frameworks": ["Bootstrap"]
+    "Frameworks": ["Bootstrap"],
+    "Github Repo": "https://github.com/valvegan/simple-js-app",
+    "Live Site": "https://valvegan.github.io/simple-js-app/"
   }
 ]
