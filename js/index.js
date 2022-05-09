@@ -2,7 +2,7 @@
 //hamburger menu and x
 //div for bikes
 //svg header?
-const productsDOM = document.querySelector(".trial2");
+const productsDOM = document.querySelector('body');
 
 class Projects {
   async getProjects() {
@@ -16,7 +16,6 @@ class Projects {
         const id = item.id;
         return { Title, Description, id };
       });
-      return projects;
     } catch (error) {
       console.log(error);
     }
@@ -48,7 +47,7 @@ document.addEventListener(onload, () => {
   //get all products
   projects.getProjects().then((projects) => {
     ui.showProjects(projects);
-    
+    console.log(projects)
   });
 });
 
