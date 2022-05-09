@@ -1,75 +1,65 @@
-//fetch json data about projects
-getDataTrial = () => {
-  fetch("js/projects.json")
-    .then((response) => response.json())
-    .then((data) =>
-      data.forEach((item) => {
-        //convert pokemon names to uppercase
-        let title = item.Title;
-        let description = item.Description;
-        console.log(title);
-      })
-    )
-    .catch((e) => {
-      console.log(e);
-    });
-};
-getDataTrial();
+//variables
+//hamburger menu and x
+//div for bikes
+//svg header?
+const productsDOM = document.querySelector(".trial2");
 
-let portfolioProjects = (function () {
-  let projects = [];
-
-  function loadList() {
-    return fetch("projects.json")
-      .then((response) => response.json())
-      .then(
-        (data) => console.log(data),
-        data.forEach((item) => {
-          console.log(item);
-          //convert pokemon names to uppercase
-          let title = item.Title;
-          let description = item.description;
-          add(project);
-        })
-      )
-      .catch((e) => {
-        console.log(e);
+class Projects {
+  async getProjects() {
+    try {
+      let result = await fetch("js/projects.json");
+      let data = await result.json();
+      let projects = data.projects;
+      projects = projects.map((item) => {
+        const Title = item.Title;
+        const Description = item.Description;
+        const id = item.id;
+        return { Title, Description, id };
       });
+      return projects;
+    } catch (error) {
+      console.log(error);
+    }
   }
+}
 
-  function displayWork(project) {
-    let container = document.querySelector("#work");
-    let listWork = document.createElement("li");
-    let button = document.createElement("button");
-    let title = document.createElement("h4");
-    listWork.classList.add("list-item");
-    button.classList.add("grid__item");
-    button.style.backgroundImage = "url(" + project.img + ")";
-    title.innerText = project.name;
-    listWork.appendChild(title);
-    listWork.appendChild(button);
-    container.appendChild(listWork);
-    button.addEventListener("click", () => {
-      displayDetails(project);
-      toggleModal();
+//display project
+class UI {
+  showProjects(projects) {
+    let result = ``;
+    projects.forEach((project) => {
+      result += ` <!--singleproduct-->
+            <article class="product">
+                <div class="img-container">
+    <button class="bag-btn" data-id=${project.id}><i class="fa fa-shopping-cart"></i>add to cart</button>
+    <h3>${project.Title}</h3>     
+    <h4>£${project.Description}</h4>      
+    </div>
+            </article>`;
     });
+    productsDOM.innerHTML = result;
   }
+}
 
-  function getAll() {
-    return projects;
-  }
+document.addEventListener(onload, () => {
+  const ui = new UI();
+  const projects = new Projects();
 
-  return {
-    loadList: loadList,
-    displayWork: displayWork,
-    getAll: getAll,
-  };
-})();
-
-portfolioProjects
-  .getAll()
-
-  .forEach((project) => {
-    portfolioProjects.loadList(project);
-    console.log(project);
+  //get all products
+  projects.getProjects().then((projects) => {
+    ui.showProjects(projects);
+    
   });
+});
+
+let x = document.getElementById("bike-pattern");
+let bikeToRepeat = document.createElement("img");
+bikeToRepeat.src = "./img/bikeIcon_rotating-wheels.svg";
+let g = "./img/bikeIcon_rotating-wheels.svg,";
+
+let bike1 = document.getElementsByClassName("bike-1");
+
+let gRepeat = g.repeat(4);
+let g3 = gRepeat.split(",");
+console.log(g3);
+x.append(g3);
