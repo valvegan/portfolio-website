@@ -2,6 +2,23 @@
 //hamburger menu and x
 //div for bikes
 //svg header?
+
+
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }}
+ const john = new Person('John', 27);
+ console.log(john.name); // 'John'
+ let image1 = document.querySelector(".profile_portrait").onclick = function ()
+ {
+  console.log("hello");
+  //validation code to see State field is mandatory.  
+ }
+console.log(image1)
+
+
 const productsDOM = document.querySelector('body');
 
 class Projects {

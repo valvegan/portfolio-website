@@ -1,5 +1,33 @@
 <svg width="886" height="675" viewBox="0 0 886 675" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="MAPOFLONDON 1" clip-path="url(#clip0_1:3)">
+<defs>
+
+<style>#dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fbb06c;
+}
+#dot1,
+ {
+  animation: move 15s infinite alternate ease-in-out,
+    blink 0.5s infinite alternate ease-in-out,
+    pulse 0.5s infinite alternate ease-in-out;
+}
+.dot1 {
+  position: absolute;
+  motion-path: path(
+    "MM527.293 261.552C527.293 261.552 531.64 310.702 525.12 347.835C518.6 384.967 520.774 456.289 530.257 472.332C539.74 488.375 573.918 524.246 572.271 526.228"
+  );
+  offset-path: path(
+    "M527.293 261.552C527.293 261.552 531.64 310.702 525.12 347.835C518.6 384.967 520.774 456.289 530.257 472.332C539.74 488.375 573.918 524.246 572.271 526.228"
+  );
+}
+</style>
+</defs>
 <g id="Layer_5">
 <path id="Vector" d="M52.2881 196.059C52.2881 196.059 98.5176 267.14 103.72 263.955C108.923 260.771 129.93 233.492 129.93 233.492" stroke="#868686" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
 <path id="Vector_2" d="M258.411 178.153C258.411 178.153 269.277 207.115 285.675 193.776" stroke="#868686" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
@@ -623,8 +651,8 @@
 <path id="Vector_599" d="M404.212 659.678C405.661 656.073 441.749 662.803 446.622 643.695C451.495 624.528 484.422 609.086 505.825 597.73C527.227 586.374 549 580.5 549 580.5" stroke="#444444" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round"/>
 </g>
 <g id="dots ">
-<g id="dots1">
-<circle id="Ellipse 39" cx="519.5" cy="449.5" r="10.5" fill="#DC4747"/>
+<g id="dot1">
+<circle id="dot1" cx="519.5" cy="449.5" r="10.5" fill="#DC4747"/>
 <circle id="Ellipse 40" cx="658.5" cy="264.5" r="10.5" fill="#DC4747"/>
 <circle id="Ellipse 42" cx="703.5" cy="334.5" r="10.5" fill="#DC4747"/>
 <circle id="Ellipse 43" cx="370.5" cy="234.5" r="10.5" fill="#DC4747"/>

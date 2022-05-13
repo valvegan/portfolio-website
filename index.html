@@ -63,9 +63,8 @@
         </ul>
       </nav>
     </header>
-<div class="trial"></div>
+
     <div id="content"></div>
-    <div id="bike-pattern"></div>
 
     <div class="bike-icon-pattern">
       <img
@@ -159,6 +158,16 @@
       </div>
       <img class="footer-svg" src="img/footer_svg.svg" alt="footergraphic" />
     </footer>
+    <script>
+      getDataTrial = () => {
+        fetch("js/projects.json")
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+          });
+      };
+      getDataTrial();
+    </script>
     <script src="js/index.js"></script>
     <script src="router.js"></script>
   </body>
